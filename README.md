@@ -32,9 +32,10 @@ MoodMeal AI is a Django web application that recommends food and drinks based on
 
 ##Project Structure
 moodmeal/
-│
+├── .venv/    
 ├── core/
 ├── templates/
 ├── moodmeal/
 ├── manage.py
-└── README.md
+└── README.md          
+└── requirements.txt
