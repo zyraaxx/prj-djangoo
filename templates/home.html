@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>MoodMeal AI</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-dark text-light">
+
+<div class="container mt-5">
+
+    <h1 class="text-center mb-5">
+        MoodMeal AI
+    </h1>
+
+    <form method="POST">
+
+        {% csrf_token %}
+
+        <select name="mood" class="form-select mb-4">
+
+            <option>Happy</option>
+            <option>Sad</option>
+            <option>Focused</option>
+            <option>Tired</option>
+            <option>Stressed</option>
+
+        </select>
+
+        <button class="btn btn-light w-100">
+            Get Recommendation
+        </button>
+
+    </form>
+
+    {% if recommendation %}
+
+    <div class="card mt-5 p-4 text-dark">
+
+        <h2>
+            Recommendation
+        </h2>
+
+        <p class="fs-3">
+            {{ recommendation }}
+        </p>
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
