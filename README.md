@@ -27,6 +27,8 @@ MoodMeal AI is a Django web application that recommends food and drinks based on
 ## Run Project
 
 ```bash
+## link html 
+[http://127.0.0.1:8000/]
 
 ##Project Structure
 moodmeal/
